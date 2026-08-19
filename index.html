@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>三木晋吉 資料アーカイブ</title>
+<meta name="description" content="これまでの掲載記事や手元に残していた資料をまとめています。各項目をクリックすると原本が開きます。">
+<meta property="og:title" content="三木晋吉 資料アーカイブ">
+<meta property="og:description" content="これまでの掲載記事や手元に残していた資料をまとめています。各項目をクリックすると原本が開きます。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#edede7;
+  --paper-2:#e3e3db;
+  --ink:#16181a;
+  --ink-soft:#5b5f5c;
+  --rule:#c7c9c0;
+  --cyan:#1f5c86;
+  --ochre:#9c6b2f;
+  --shadow:0 1px 0 var(--rule);
+  --gap:clamp(14px,2.2vw,26px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Zen Kaku Gothic New",-apple-system,"Hiragino Kaku Gothic ProN",sans-serif;
+  font-size:15px; line-height:1.75;
+  background-image:linear-gradient(rgba(31,92,134,.055) 1px,transparent 1px);
+  background-size:100% 64px;
+}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,44px)}
+a{color:inherit}
+
+/* ---------- ヘッダー ---------- */
+header.masthead{padding:clamp(46px,8vw,92px) 0 30px;border-bottom:2px solid var(--ink)}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--cyan);margin:0 0 18px
+}
+h1.site-title{
+  font-family:"Shippori Mincho B1",serif;font-weight:700;
+  font-size:clamp(38px,7.5vw,74px);line-height:1.06;letter-spacing:.01em;margin:0
+}
+.site-title .en{
+  display:block;font-family:"IBM Plex Mono",monospace;font-weight:400;
+  font-size:clamp(11px,1.5vw,14px);letter-spacing:.34em;text-transform:uppercase;
+  color:var(--ink-soft);margin-top:16px
+}
+.lead{max-width:52ch;margin:26px 0 0;color:var(--ink-soft)}
+.ledger{
+  display:flex;flex-wrap:wrap;gap:0 34px;margin-top:30px;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;color:var(--ink-soft)
+}
+.ledger b{color:var(--ink);font-weight:500}
+
+/* ---------- 操作バー ---------- */
+.controls{
+  position:sticky;top:0;z-index:40;background:var(--paper);
+  border-bottom:1px solid var(--rule);padding:14px 0;
+  display:flex;flex-wrap:wrap;gap:12px;align-items:center
+}
+.search{
+  flex:1 1 240px;min-width:0;display:flex;align-items:center;gap:9px;
+  border:1px solid var(--rule);background:#f6f6f1;padding:9px 13px
+}
+.search input{
+  border:0;background:transparent;flex:1;min-width:0;font:inherit;font-size:14px;color:var(--ink)
+}
+.search input:focus{outline:none}
+.search svg{flex:none;stroke:var(--ink-soft)}
+.chips{display:flex;gap:7px;flex-wrap:wrap}
+.chip{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  padding:8px 14px;border:1px solid var(--rule);background:transparent;color:var(--ink-soft);
+  cursor:pointer;transition:background .16s,color .16s,border-color .16s
+}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chip:focus-visible,.search:focus-within{outline:2px solid var(--cyan);outline-offset:2px}
+
+/* ---------- コンタクトシート ---------- */
+.sheet{
+  display:grid;gap:var(--gap);padding:var(--gap) 0 80px;
+  grid-template-columns:repeat(auto-fill,minmax(210px,1fr))
+}
+.frame[hidden]{display:none}
+.frame{
+  display:flex;flex-direction:column;text-decoration:none;
+  background:#f7f7f2;border:1px solid var(--rule);
+  transition:transform .22s cubic-bezier(.2,.7,.3,1),border-color .22s,box-shadow .22s
+}
+.frame:hover,.frame:focus-visible{
+  transform:translateY(-4px);border-color:var(--ink);
+  box-shadow:6px 6px 0 rgba(22,24,26,.09);outline:none
+}
+.frame:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.sprocket{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:7px 10px;border-bottom:1px solid var(--rule);
+  font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;color:var(--ink-soft)
+}
+.sprocket .no{color:var(--cyan)}
+.sprocket .kind{color:var(--ochre);text-transform:uppercase}
+.shot{
+  position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--paper-2);
+  display:flex;align-items:center;justify-content:center
+}
+.shot{background:#fff}
+.shot img{width:100%;height:100%;object-fit:contain;display:block}
+.shot .missing{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-soft)}
+.caption{padding:11px 12px 14px;border-top:1px solid var(--rule)}
+.caption h2{
+  font-family:"Shippori Mincho B1",serif;font-size:15px;font-weight:500;line-height:1.45;
+  margin:0;word-break:break-word
+}
+.caption .note{font-size:12.5px;color:var(--ink-soft);margin:5px 0 0}
+.caption .meta{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.07em;
+  color:var(--ink-soft);margin:9px 0 0;display:flex;flex-wrap:wrap;gap:0 10px
+}
+.empty{
+  grid-column:1/-1;padding:70px 0;text-align:center;color:var(--ink-soft);
+  font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.06em
+}
+
+/* ---------- ライトボックス ---------- */
+.lightbox{
+  position:fixed;inset:0;z-index:90;background:rgba(20,22,20,.94);
+  display:none;align-items:center;justify-content:center;padding:24px
+}
+.lightbox[open],.lightbox.on{display:flex}
+.lightbox img{max-width:100%;max-height:82vh;object-fit:contain;border:1px solid #333}
+.lb-bar{
+  position:absolute;left:0;right:0;bottom:0;padding:16px 24px;color:#dcdcd4;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap
+}
+.lb-bar a{color:#8fc4e8}
+.lb-close{
+  position:absolute;top:16px;right:20px;background:none;border:1px solid #555;color:#dcdcd4;
+  font:inherit;font-size:13px;padding:6px 13px;cursor:pointer
+}
+.lb-close:hover{border-color:#dcdcd4}
+
+footer{border-top:2px solid var(--ink);padding:26px 0 60px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;color:var(--ink-soft)}
+
+@media (max-width:520px){
+  .sheet{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+  body{background-size:100% 48px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+  .frame:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <p class="eyebrow">Catalogue &nbsp;/&nbsp; 目録</p>
+  <h1 class="site-title">三木晋吉 資料アーカイブ<span class="en">Shinkichi Mike Miki — Archive</span></h1>
+  <p class="lead">これまでの掲載記事や手元に残していた資料をまとめています。各項目をクリックすると原本が開きます。</p>
+  <p class="ledger">
+    <span>収録 <b>4</b> 点</span>
+    <span>画像 <b>4</b></span>
+    <span>PDF <b>0</b></span>
+    <span>更新 <b>2026-08-19</b></span>
+  </p>
+</header>
+
+<div class="controls">
+  <label class="search">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="題名・メモ・ファイル名で絞り込む" autocomplete="off">
+  </label>
+  <div class="chips" id="filters">
+    <button class="chip" data-filter="all" aria-pressed="true">すべて</button>
+    <button class="chip" data-filter="image" aria-pressed="false">画像</button>
+    <button class="chip" data-filter="pdf" aria-pressed="false">PDF</button>
+  </div>
+</div>
+
+<main class="sheet" id="sheet">
+<a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/a-day-bulletin-504-2017-p01-cover.jpeg" data-kind="image"
+   data-no="001" data-title="a day BULLETIN 第504号 表紙「良い会社 / To Be a Good Company」" data-search="a day bulletin 第504号 表紙「良い会社 / to be a good company」 タイの週刊フリーマガジン a day bulletin 第504号（2017年9月18日発行）の表紙。東京海上日動火災保険（タイ）社長 三木晋吉（shinkichi mike miki）を起用。 掲載記事/a-day-bulletin-504-2017-p01-cover.jpeg 掲載記事 2017-09-18"
+   target="_blank" rel="noopener">
+  <div class="sprocket"><span class="no">001</span><span class="kind">IMG</span></div>
+  <div class="shot"><img src="thumbs/a-day-bulletin-504-2017-p01-cover-jpeg-e50f64d4.jpg" alt="a day BULLETIN 第504号 表紙「良い会社 / To Be a Good Company」" loading="lazy" decoding="async"></div>
+  <div class="caption">
+    <h2>a day BULLETIN 第504号 表紙「良い会社 / To Be a Good Company」</h2>
+    <p class="note">タイの週刊フリーマガジン a day BULLETIN 第504号（2017年9月18日発行）の表紙。東京海上日動火災保険（タイ）社長 三木晋吉（Shinkichi Mike Miki）を起用。</p>
+    <p class="meta"><span>2017-09-18</span><span>80.8 KB</span><span>掲載記事</span></p>
+  </div>
+</a>
+<a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/a-day-bulletin-504-2017-p10-11-the-challenge.jpeg" data-kind="image"
+   data-no="002" data-title="特集扉「挑戦 / The Challenge」pp.10-11" data-search="特集扉「挑戦 / the challenge」pp.10-11 特集インタビュー the conversation の扉ページ。肩書は東京海上日動火災保険（タイ）社長 兼 ceo。 掲載記事/a-day-bulletin-504-2017-p10-11-the-challenge.jpeg 掲載記事 2017-09-18"
+   target="_blank" rel="noopener">
+  <div class="sprocket"><span class="no">002</span><span class="kind">IMG</span></div>
+  <div class="shot"><img src="thumbs/a-day-bulletin-504-2017-p10-11-the-challenge-jpe-9c187203.jpg" alt="特集扉「挑戦 / The Challenge」pp.10-11" loading="lazy" decoding="async"></div>
+  <div class="caption">
+    <h2>特集扉「挑戦 / The Challenge」pp.10-11</h2>
+    <p class="note">特集インタビュー The Conversation の扉ページ。肩書は東京海上日動火災保険（タイ）社長 兼 CEO。</p>
+    <p class="meta"><span>2017-09-18</span><span>100.4 KB</span><span>掲載記事</span></p>
+  </div>
+</a>
+<a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/a-day-bulletin-504-2017-p12-13-cultural-differences.jpeg" data-kind="image"
+   data-no="003" data-title="本文「Cultural Differences 文化の違い」pp.12-13" data-search="本文「cultural differences 文化の違い」pp.12-13 日米タイの商習慣の違い、日系企業のタイ進出、タイ損害保険協会での活動などについて。 掲載記事/a-day-bulletin-504-2017-p12-13-cultural-differences.jpeg 掲載記事 2017-09-18"
+   target="_blank" rel="noopener">
+  <div class="sprocket"><span class="no">003</span><span class="kind">IMG</span></div>
+  <div class="shot"><img src="thumbs/a-day-bulletin-504-2017-p12-13-cultural-differen-b15c228f.jpg" alt="本文「Cultural Differences 文化の違い」pp.12-13" loading="lazy" decoding="async"></div>
+  <div class="caption">
+    <h2>本文「Cultural Differences 文化の違い」pp.12-13</h2>
+    <p class="note">日米タイの商習慣の違い、日系企業のタイ進出、タイ損害保険協会での活動などについて。</p>
+    <p class="meta"><span>2017-09-18</span><span>194.7 KB</span><span>掲載記事</span></p>
+  </div>
+</a>
+<a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/a-day-bulletin-504-2017-p14-15-a-good-company.jpeg" data-kind="image"
+   data-no="004" data-title="本文「A Good Company / Business and Society」pp.14-15" data-search="本文「a good company / business and society」pp.14-15 「良い会社」の三本柱、csr、マリン保険、aec・thailand 4.0 と保険業界の展望について。 掲載記事/a-day-bulletin-504-2017-p14-15-a-good-company.jpeg 掲載記事 2017-09-18"
+   target="_blank" rel="noopener">
+  <div class="sprocket"><span class="no">004</span><span class="kind">IMG</span></div>
+  <div class="shot"><img src="thumbs/a-day-bulletin-504-2017-p14-15-a-good-company-jp-ef11cf63.jpg" alt="本文「A Good Company / Business and Society」pp.14-15" loading="lazy" decoding="async"></div>
+  <div class="caption">
+    <h2>本文「A Good Company / Business and Society」pp.14-15</h2>
+    <p class="note">「良い会社」の三本柱、CSR、マリン保険、AEC・Thailand 4.0 と保険業界の展望について。</p>
+    <p class="meta"><span>2017-09-18</span><span>225.3 KB</span><span>掲載記事</span></p>
+  </div>
+</a>
+<p class="empty" id="empty" hidden>該当する資料がありません。条件を変えてみてください。</p>
+</main>
+
+<footer>三木晋吉 資料アーカイブ &nbsp;·&nbsp; 2026-08-19</footer>
+</div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="拡大表示">
+  <button class="lb-close" id="lb-close">閉じる ✕</button>
+  <img id="lb-img" alt="">
+  <div class="lb-bar">
+    <span id="lb-title"></span>
+    <a id="lb-open" href="#" target="_blank" rel="noopener">原本を開く →</a>
+  </div>
+</div>
+
+<script>
+/* HTML は生成済み。JS は絞り込みと拡大表示だけを担当する。
+   JS が無効でも全件そのまま閲覧できます。 */
+const sheet  = document.getElementById('sheet');
+const cards  = [...sheet.querySelectorAll('.frame')];
+const empty  = document.getElementById('empty');
+const q      = document.getElementById('q');
+let filter = 'all';
+
+function apply() {
+  const term = q.value.trim().toLowerCase();
+  let shown = 0;
+  for (const c of cards) {
+    const ok = (filter === 'all' || c.dataset.kind === filter)
+            && (!term || c.dataset.search.includes(term));
+    c.hidden = !ok;
+    if (ok) shown++;
+  }
+  empty.hidden = shown > 0;
+}
+
+q.addEventListener('input', apply);
+document.getElementById('filters').addEventListener('click', e => {
+  const btn = e.target.closest('.chip');
+  if (!btn) return;
+  filter = btn.dataset.filter;
+  [...e.currentTarget.children].forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+  apply();
+});
+
+/* 画像はその場で拡大、PDF は新しいタブで開く */
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lb-img');
+const lbTitle = document.getElementById('lb-title');
+const lbOpen = document.getElementById('lb-open');
+
+sheet.addEventListener('click', e => {
+  const a = e.target.closest('.frame');
+  if (!a || a.dataset.kind !== 'image') return;
+  e.preventDefault();
+  lbImg.src = a.getAttribute('href');
+  lbImg.alt = a.dataset.title;
+  lbTitle.textContent = a.dataset.no + ' — ' + a.dataset.title;
+  lbOpen.href = a.getAttribute('href');
+  lb.classList.add('on');
+});
+
+function closeLb() { lb.classList.remove('on'); lbImg.src = ''; }
+document.getElementById('lb-close').addEventListener('click', closeLb);
+lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+</script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -110,7 +111,7 @@ h1.site-title{
 .sprocket .no{color:var(--cyan)}
 .sprocket .kind{color:var(--ochre);text-transform:uppercase}
 .shot{
-  position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--paper-2);
+  position:relative;aspect-ratio:4/3;overflow:hidden;
   display:flex;align-items:center;justify-content:center
 }
 .shot{background:#fff}
@@ -240,8 +241,6 @@ footer{border-top:2px solid var(--ink);padding:26px 0 60px;
 </div>
 
 <script>
-/* HTML は生成済み。JS は絞り込みと拡大表示だけを担当する。
-   JS が無効でも全件そのまま閲覧できます。 */
 const sheet  = document.getElementById('sheet');
 const cards  = [...sheet.querySelectorAll('.frame')];
 const empty  = document.getElementById('empty');
@@ -269,7 +268,6 @@ document.getElementById('filters').addEventListener('click', e => {
   apply();
 });
 
-/* 画像はその場で拡大、PDF は新しいタブで開く */
 const lb = document.getElementById('lightbox');
 const lbImg = document.getElementById('lb-img');
 const lbTitle = document.getElementById('lb-title');

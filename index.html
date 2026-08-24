@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -25,7 +24,6 @@ html
   --rule:#c7c9c0;
   --cyan:#1f5c86;
   --ochre:#9c6b2f;
-  --shadow:0 1px 0 var(--rule);
   --gap:clamp(14px,2.2vw,26px);
 }
 *{box-sizing:border-box}
@@ -40,7 +38,6 @@ body{
 .wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,44px)}
 a{color:inherit}
 
-/* ---------- ヘッダー ---------- */
 header.masthead{padding:clamp(46px,8vw,92px) 0 30px;border-bottom:2px solid var(--ink)}
 .eyebrow{
   font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.22em;
@@ -62,7 +59,6 @@ h1.site-title{
 }
 .ledger b{color:var(--ink);font-weight:500}
 
-/* ---------- 操作バー ---------- */
 .controls{
   position:sticky;top:0;z-index:40;background:var(--paper);
   border-bottom:1px solid var(--rule);padding:14px 0;
@@ -87,7 +83,6 @@ h1.site-title{
 .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 .chip:focus-visible,.search:focus-within{outline:2px solid var(--cyan);outline-offset:2px}
 
-/* ---------- コンタクトシート ---------- */
 .sheet{
   display:grid;gap:var(--gap);padding:var(--gap) 0 80px;
   grid-template-columns:repeat(auto-fill,minmax(210px,1fr))
@@ -111,10 +106,9 @@ h1.site-title{
 .sprocket .no{color:var(--cyan)}
 .sprocket .kind{color:var(--ochre);text-transform:uppercase}
 .shot{
-  position:relative;aspect-ratio:4/3;overflow:hidden;
+  position:relative;aspect-ratio:4/3;overflow:hidden;background:#fff;
   display:flex;align-items:center;justify-content:center
 }
-.shot{background:#fff}
 .shot img{width:100%;height:100%;object-fit:contain;display:block}
 .shot .missing{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-soft)}
 .caption{padding:11px 12px 14px;border-top:1px solid var(--rule)}
@@ -132,12 +126,11 @@ h1.site-title{
   font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.06em
 }
 
-/* ---------- ライトボックス ---------- */
 .lightbox{
   position:fixed;inset:0;z-index:90;background:rgba(20,22,20,.94);
   display:none;align-items:center;justify-content:center;padding:24px
 }
-.lightbox[open],.lightbox.on{display:flex}
+.lightbox.on{display:flex}
 .lightbox img{max-width:100%;max-height:82vh;object-fit:contain;border:1px solid #333}
 .lb-bar{
   position:absolute;left:0;right:0;bottom:0;padding:16px 24px;color:#dcdcd4;
@@ -172,10 +165,10 @@ footer{border-top:2px solid var(--ink);padding:26px 0 60px;
   <h1 class="site-title">三木晋吉 資料アーカイブ<span class="en">Shinkichi Mike Miki — Archive</span></h1>
   <p class="lead">これまでの掲載記事や手元に残していた資料をまとめています。各項目をクリックすると原本が開きます。</p>
   <p class="ledger">
-    <span>収録 <b>3</b> 点</span>
+    <span>収録 <b>10</b> 点</span>
     <span>画像 <b>0</b></span>
-    <span>PDF <b>3</b></span>
-    <span>更新 <b>2026-08-19</b></span>
+    <span>PDF <b>10</b></span>
+    <span>更新 <b>2026-08-24</b></span>
   </p>
 </header>
 
@@ -214,80 +207,22 @@ footer{border-top:2px solid var(--ink);padding:26px 0 60px;
     <p class="meta"><span>2017-09-18</span><span>4ページ</span><span>548.1 KB</span><span>掲載記事</span></p>
   </div>
 </a>
-<a class="frame" href="files/%E7%AB%B6%E6%8A%80%E6%AD%B4/basketball-career-waseda-tokio-marine-1986-1997.pdf" data-kind="pdf"
-   data-no="003" data-title="バスケットボール競技歴 1986-1997（早稲田大学・東京海上・マニラ）" data-search="バスケットボール競技歴 1986-1997（早稲田大学・東京海上・マニラ） バスケットボール選手時代の資料6点。第44回早慶バスケットボール定期戦（1986年6月15日 早稲田大学記念会堂）プログラム表紙。早稲田大学バスケットボール部 強化リーグb-1 選手名鑑（背番号7・センター・192cm・商学部・早大学院出身「シュート。走るセンターとして期待」）。日本リーグ2部 東京海上ファルコン 選手名鑑（背番号13・fc・192cm・平均9.9得点4.2リバウンド）。日本リーグ2部ファルコン・ディビジョン戦評およびスコア。the daily manila shimbun 1997年11月26日「ひと交差点」日本人フィエスタのバスケで活躍・スポーツ通し日比交流に努力。 競技歴/basketball-career-waseda-tokio-marine-1986-1997.pdf 競技歴 1997-11-26"
+<a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/nna-thailand-2017-02-tokio-marine-agency-sales.pdf" data-kind="pdf"
+   data-no="003" data-title="The Daily NNA タイ版 2017年2月17日「東京海上、代理店販売を強化」" data-search="the daily nna タイ版 2017年2月17日「東京海上、代理店販売を強化」 アジア経済情報紙nnaタイ版の一面記事。タイ国東京海上火災保険 三木晋吉社長へのインタビュー。タイ進出55周年を経て2017年度を飛躍の年と位置づけ、代理店・ブローカー経由の販売チャンネル拡大により売上高80億バーツ（約260億円）を目指す方針を語る。自動車ディーラー経由50%・日系向け45%という売上構成、タイ特有の自動車保険市場についても言及。 掲載記事/nna-thailand-2017-02-tokio-marine-agency-sales.pdf 掲載記事 2017-02-17"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">003</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/basketball-career-waseda-tokio-marine-1986-1997--c400ac9d.jpg" alt="バスケットボール競技歴 1986-1997（早稲田大学・東京海上・マニラ）" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/nna-thailand-2017-02-tokio-marine-agency-sales-p-b45f0388.jpg" alt="The Daily NNA タイ版 2017年2月17日「東京海上、代理店販売を強化」" loading="lazy" decoding="async"></div>
   <div class="caption">
-    <h2>バスケットボール競技歴 1986-1997（早稲田大学・東京海上・マニラ）</h2>
-    <p class="note">バスケットボール選手時代の資料6点。第44回早慶バスケットボール定期戦（1986年6月15日 早稲田大学記念会堂）プログラム表紙。早稲田大学バスケットボール部 強化リーグB-1 選手名鑑（背番号7・センター・192cm・商学部・早大学院出身「シュート。走るセンターとして期待」）。日本リーグ2部 東京海上ファルコン 選手名鑑（背番号13・FC・192cm・平均9.9得点4.2リバウンド）。日本リーグ2部ファルコン・ディビジョン戦評およびスコア。The Daily MANILA SHIMBUN 1997年11月26日「ひと交差点」日本人フィエスタのバスケで活躍・スポーツ通し日比交流に努力。</p>
-    <p class="meta"><span>1997-11-26</span><span>6ページ</span><span>4.0 MB</span><span>競技歴</span></p>
+    <h2>The Daily NNA タイ版 2017年2月17日「東京海上、代理店販売を強化」</h2>
+    <p class="note">アジア経済情報紙NNAタイ版の一面記事。タイ国東京海上火災保険 三木晋吉社長へのインタビュー。タイ進出55周年を経て2017年度を飛躍の年と位置づけ、代理店・ブローカー経由の販売チャンネル拡大により売上高80億バーツ（約260億円）を目指す方針を語る。自動車ディーラー経由50%・日系向け45%という売上構成、タイ特有の自動車保険市場についても言及。</p>
+    <p class="meta"><span>2017-02-17</span><span>1ページ</span><span>187.8 KB</span><span>掲載記事</span></p>
   </div>
 </a>
-<p class="empty" id="empty" hidden>該当する資料がありません。条件を変えてみてください。</p>
-</main>
-
-<footer>三木晋吉 資料アーカイブ &nbsp;·&nbsp; 2026-08-19</footer>
-</div>
-
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="拡大表示">
-  <button class="lb-close" id="lb-close">閉じる ✕</button>
-  <img id="lb-img" alt="">
-  <div class="lb-bar">
-    <span id="lb-title"></span>
-    <a id="lb-open" href="#" target="_blank" rel="noopener">原本を開く →</a>
-  </div>
-</div>
-
-<script>
-const sheet  = document.getElementById('sheet');
-const cards  = [...sheet.querySelectorAll('.frame')];
-const empty  = document.getElementById('empty');
-const q      = document.getElementById('q');
-let filter = 'all';
-
-function apply() {
-  const term = q.value.trim().toLowerCase();
-  let shown = 0;
-  for (const c of cards) {
-    const ok = (filter === 'all' || c.dataset.kind === filter)
-            && (!term || c.dataset.search.includes(term));
-    c.hidden = !ok;
-    if (ok) shown++;
-  }
-  empty.hidden = shown > 0;
-}
-
-q.addEventListener('input', apply);
-document.getElementById('filters').addEventListener('click', e => {
-  const btn = e.target.closest('.chip');
-  if (!btn) return;
-  filter = btn.dataset.filter;
-  [...e.currentTarget.children].forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
-  apply();
-});
-
-const lb = document.getElementById('lightbox');
-const lbImg = document.getElementById('lb-img');
-const lbTitle = document.getElementById('lb-title');
-const lbOpen = document.getElementById('lb-open');
-
-sheet.addEventListener('click', e => {
-  const a = e.target.closest('.frame');
-  if (!a || a.dataset.kind !== 'image') return;
-  e.preventDefault();
-  lbImg.src = a.getAttribute('href');
-  lbImg.alt = a.dataset.title;
-  lbTitle.textContent = a.dataset.no + ' — ' + a.dataset.title;
-  lbOpen.href = a.getAttribute('href');
-  lb.classList.add('on');
-});
-
-function closeLb() { lb.classList.remove('on'); lbImg.src = ''; }
-document.getElementById('lb-close').addEventListener('click', closeLb);
-lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
-</script>
-</body>
-</html>
+<a class="frame" href="files/%E5%AF%84%E7%A8%BF/my-rookie-days-shinnyu-shain-jidai.pdf" data-kind="pdf"
+   data-no="004" data-title="寄稿「My Rookie Days（10）私の新入社員時代」" data-search="寄稿「my rookie days（10）私の新入社員時代」 タイ国東京海上火災保険 三木晋吉による寄稿。1987年入社当時のバブル期の東京、本店営業3部でマスコミ系顧客を担当した日々、日本リーグ・バスケットボール部との両立、興行中止保険や打ち上げ保険といった特殊な保険の設計、アントニオ猪木氏との出会い、そしてスティーブ・ジョブズの「connecting dots」に重ねた「ご縁」についてのエッセイ。 寄稿/my-rookie-days-shinnyu-shain-jidai.pdf 寄稿 2016-12-08"
+   target="_blank" rel="noopener">
+  <div class="sprocket"><span class="no">004</span><span class="kind">PDF</span></div>
+  <div class="shot"><img src="thumbs/my-rookie-days-shinnyu-shain-jidai-pdf-0a315ada.jpg" alt="寄稿「My Rookie Days（10）私の新入社員時代」" loading="lazy" decoding="async"></div>
+  <div class="caption">
+    <h2>寄稿「My Rookie Days（10）私の新入社員時代」</h2>
+    <p class="note">タイ国東京海上火災保険 三木晋吉による寄稿。1987年入社当時のバブル期の東京、本店営業3部でマスコミ系顧客を担当した日々、日本リーグ・バスケットボール部との両立、興行中止保険や打ち上げ保険といった特殊な保険の設計、アントニオ猪木氏との出会い、そしてスティーブ・ジョブズの「Connecting Dots」に重ねた「ご縁」についてのエッセイ。</p>

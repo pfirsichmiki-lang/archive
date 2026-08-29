@@ -3,15 +3,57 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>三木晋吉 資料アーカイブ</title>
-<meta name="description" content="これまでの掲載記事や手元に残していた資料をまとめています。各項目をクリックすると原本が開きます。">
-<meta property="og:title" content="三木晋吉 資料アーカイブ">
-<meta property="og:description" content="これまでの掲載記事や手元に残していた資料をまとめています。各項目をクリックすると原本が開きます。">
+<meta name="google-site-verification" content="C0snWYEGy0wiI3A2_yLf6txCN5BVQ9c-ydmX0KCL6Fc" />
+<title>三木晋吉 資料アーカイブ | Shinkichi Mike Miki — Archive</title>
+<meta name="description" content="これまでの掲載記事や手元に残していた資料をまとめています。各項目をクリックすると原本が開きます。Archive of published articles, essays and career materials of Shinkichi Mike Miki (三木晋吉).">
+<meta property="og:title" content="三木晋吉 資料アーカイブ | Shinkichi Mike Miki — Archive">
+<meta property="og:description" content="これまでの掲載記事や手元に残していた資料をまとめています。Archive of published articles, essays and career materials of Shinkichi Mike Miki.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://pfirsichmiki-lang.github.io/archive/">
 <meta property="og:url" content="https://pfirsichmiki-lang.github.io/archive/">
 <meta property="og:image" content="https://pfirsichmiki-lang.github.io/archive/thumbs/thailand-insurance-2019-tokio-marine-asia-pdf-24d6d001.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://pfirsichmiki-lang.github.io/archive/#person",
+  "name": "Mike Shinkichi Miki",
+  "alternateName": ["三木晋吉", "Shinkichi Miki", "Mike Miki", "Shinkichi Mike Miki", "みき しんきち"],
+  "givenName": "Shinkichi",
+  "familyName": "Miki",
+  "jobTitle": "Managing Director, Global Japanese Practice",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "The Baldwin Group",
+    "url": "https://baldwin.com/"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Waseda University"
+  },
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Los Angeles, California"
+  },
+  "knowsLanguage": ["ja", "en"],
+  "knowsAbout": [
+    "Commercial insurance",
+    "Risk management",
+    "Japanese corporations in the United States",
+    "Insurance markets in Southeast Asia"
+  ],
+  "url": "https://pfirsichmiki-lang.github.io/archive/",
+  "sameAs": [
+    "https://www.linkedin.com/in/mike-shinkichi-miki",
+    "https://baldwin.com/news/brp-group-inc-announces-executive-leadership-promotion-in-its-japanese-practice-group/",
+    "https://www.businessinsurance.com/tokio-marines-thai-division-to-grow-businesses-in-cambodia-laos-and-myanmar/",
+    "https://www.insurancebusinessmag.com/asia/news/breaking-news/tokio-marine-merges-safety-insurance-into-thailand-arm-169195.aspx"
+  ],
+  "description": "Managing Director and Co-Leader of the Global Japanese Practice at The Baldwin Group. Previously spent over three decades with Tokio Marine in international roles, including President of Tokio Marine Insurance (Thailand) and Head of Asia."
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -24,6 +66,7 @@
   --rule:#c7c9c0;
   --cyan:#1f5c86;
   --ochre:#9c6b2f;
+  --shadow:0 1px 0 var(--rule);
   --gap:clamp(14px,2.2vw,26px);
 }
 *{box-sizing:border-box}
@@ -38,6 +81,7 @@ body{
 .wrap{max-width:1240px;margin:0 auto;padding:0 clamp(18px,4vw,44px)}
 a{color:inherit}
 
+/* ---------- ヘッダー ---------- */
 header.masthead{padding:clamp(46px,8vw,92px) 0 30px;border-bottom:2px solid var(--ink)}
 .eyebrow{
   font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.22em;
@@ -58,6 +102,16 @@ h1.site-title{
   font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;color:var(--ink-soft)
 }
 .ledger b{color:var(--ink);font-weight:500}
+
+/* ---------- 操作バー ---------- */
+.bio{padding:34px 0 30px;border-bottom:1px solid var(--rule)}
+.bio h2{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--cyan);margin:0 0 16px
+}
+.bio p{max-width:66ch;margin:0 0 13px;color:var(--ink-soft);font-size:14px;line-height:1.8}
+.bio p:last-child{margin-bottom:0}
+.bio b{color:var(--ink);font-weight:500}
 
 .controls{
   position:sticky;top:0;z-index:40;background:var(--paper);
@@ -83,6 +137,7 @@ h1.site-title{
 .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 .chip:focus-visible,.search:focus-within{outline:2px solid var(--cyan);outline-offset:2px}
 
+/* ---------- コンタクトシート ---------- */
 .sheet{
   display:grid;gap:var(--gap);padding:var(--gap) 0 80px;
   grid-template-columns:repeat(auto-fill,minmax(210px,1fr))
@@ -106,9 +161,10 @@ h1.site-title{
 .sprocket .no{color:var(--cyan)}
 .sprocket .kind{color:var(--ochre);text-transform:uppercase}
 .shot{
-  position:relative;aspect-ratio:4/3;overflow:hidden;background:#fff;
+  position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--paper-2);
   display:flex;align-items:center;justify-content:center
 }
+.shot{background:#fff}
 .shot img{width:100%;height:100%;object-fit:contain;display:block}
 .shot .missing{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-soft)}
 .caption{padding:11px 12px 14px;border-top:1px solid var(--rule)}
@@ -117,6 +173,14 @@ h1.site-title{
   margin:0;word-break:break-word
 }
 .caption .note{font-size:12.5px;color:var(--ink-soft);margin:5px 0 0}
+.caption .en-note{
+  font-size:12px;line-height:1.6;color:var(--ink-soft);margin:9px 0 0;
+  padding-top:8px;border-top:1px dotted var(--rule)
+}
+.caption .en-note .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.16em;
+  color:var(--ochre);margin-right:7px
+}
 .caption .meta{
   font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.07em;
   color:var(--ink-soft);margin:9px 0 0;display:flex;flex-wrap:wrap;gap:0 10px
@@ -126,11 +190,12 @@ h1.site-title{
   font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.06em
 }
 
+/* ---------- ライトボックス ---------- */
 .lightbox{
   position:fixed;inset:0;z-index:90;background:rgba(20,22,20,.94);
   display:none;align-items:center;justify-content:center;padding:24px
 }
-.lightbox.on{display:flex}
+.lightbox[open],.lightbox.on{display:flex}
 .lightbox img{max-width:100%;max-height:82vh;object-fit:contain;border:1px solid #333}
 .lb-bar{
   position:absolute;left:0;right:0;bottom:0;padding:16px 24px;color:#dcdcd4;
@@ -172,10 +237,18 @@ footer{border-top:2px solid var(--ink);padding:26px 0 60px;
   </p>
 </header>
 
+<section class="bio" lang="en">
+  <h2>Profile &nbsp;/&nbsp; 英文略歴</h2>
+  <p><b>Mike Shinkichi Miki</b> (三木晋吉) is Managing Director and Co-Leader of the Global Japanese Practice at <b>The Baldwin Group</b> in New York, where he advises Japanese corporations operating in the United States on commercial insurance and risk management.</p>
+  <p>Before joining Baldwin in 2022, he spent over three decades with <b>Tokio Marine</b> in international roles, serving as President of Tokio Marine Insurance (Thailand) and later as Head of Asia. Earlier postings took him to Los Angeles, Cincinnati and Manila. Born in Los Angeles in 1965, he graduated from Waseda University Senior High School in 1983 and from <b>Waseda University</b> in 1987.</p>
+  <p>Earlier in his career he played basketball in Japan's national league for the Tokio Marine Falcons. He works in both Japanese and English, and is based in New Jersey.</p>
+  <p>Published work in English from his years in Asia and the United States appears under the name <b>Shinkichi Miki</b>. The materials below are largely in Japanese; each entry carries an English summary.</p>
+</section>
+
 <div class="controls">
   <label class="search">
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-    <input id="q" type="search" placeholder="題名・メモ・ファイル名で絞り込む" autocomplete="off">
+    <input id="q" type="search" placeholder="題名・メモ・ファイル名で絞り込む / search in English" autocomplete="off">
   </label>
   <div class="chips" id="filters">
     <button class="chip" data-filter="all" aria-pressed="true">すべて</button>
@@ -186,207 +259,225 @@ footer{border-top:2px solid var(--ink);padding:26px 0 60px;
 
 <main class="sheet" id="sheet">
 <a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/thailand-insurance-2019-tokio-marine-asia.pdf" data-kind="pdf"
-   data-no="001" data-title="Thailand Insurance 誌 2019年 特集「21年目のタイ保険業界に何が起きるか」"
+   data-no="001" data-title="Thailand Insurance 誌 2019年 特集「21年目のタイ保険業界に何が起きるか」" data-search="thailand insurance 誌 2019年 特集「21年目のタイ保険業界に何が起きるか」 タイの保険専門誌 thailand insurance（นิตยสารไทยแลนด์อินชัวรันส์）創刊21年目の特集記事。2562年（2019年）以降のタイ保険業界の展望を論じる。金利環境と家計消費、監督当局の規制強化、業界再編・m&amp;aの加速、生命保険と損害保険の垣根の変化などを取り上げる。東京海上アジア 常務取締役 三木晋吉（ชินคิจิ ไมค์ มิกิ）が、東南アジア市場の潜在力、とりわけclmv諸国とメコン地域の成長性についてコメント。 掲載記事/thailand-insurance-2019-tokio-marine-asia.pdf 掲載記事 2019-01-01 feature in thailand insurance magazine marking its 21st year, on what lies ahead for the thai insurance industry from 2019: interest rates and household spending, tighter regulation, accelerating consolidation and m&amp;amp;a, and the blurring line between life and non-life. shinkichi mike miki, managing director of tokio marine asia, comments on the potential of the southeast asian market and particularly the growth of the clmv countries and the mekong region. thailand insurance magazine 2019 industry outlook consolidation m&amp;a regulation tokio marine asia managing director clmv mekong southeast asia"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">001</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/thailand-insurance-2019-tokio-marine-asia-pdf-24d6d001.jpg" alt="Thailand Insurance 誌 2019年" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/thailand-insurance-2019-tokio-marine-asia-pdf-24d6d001.jpg" alt="Thailand Insurance 誌 2019年 特集「21年目のタイ保険業界に何が起きるか」" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>Thailand Insurance 誌 2019年 特集「21年目のタイ保険業界に何が起きるか」</h2>
     <p class="note">タイの保険専門誌 Thailand Insurance（นิตยสารไทยแลนด์อินชัวรันส์）創刊21年目の特集記事。2562年（2019年）以降のタイ保険業界の展望を論じる。金利環境と家計消費、監督当局の規制強化、業界再編・M&amp;Aの加速、生命保険と損害保険の垣根の変化などを取り上げる。東京海上アジア 常務取締役 三木晋吉（ชินคิจิ ไมค์ มิกิ）が、東南アジア市場の潜在力、とりわけCLMV諸国とメコン地域の成長性についてコメント。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Feature in Thailand Insurance magazine marking its 21st year, on what lies ahead for the Thai insurance industry from 2019: interest rates and household spending, tighter regulation, accelerating consolidation and M&amp;A, and the blurring line between life and non-life. Shinkichi Mike Miki, Managing Director of Tokio Marine Asia, comments on the potential of the Southeast Asian market and particularly the growth of the CLMV countries and the Mekong region.</p>
     <p class="meta"><span>2019-01-01</span><span>1ページ</span><span>282.4 KB</span><span>掲載記事</span></p>
   </div>
 </a>
 <a class="frame" href="files/golf/golf-omoide-lpga-thailand-singapore.pdf" data-kind="pdf"
-   data-no="002" data-title="ゴルフの思い出 Honda LPGA Thailand・HSBC Women&#x27;s World Championship"
+   data-no="002" data-title="ゴルフの思い出 Honda LPGA Thailand・HSBC Women&#x27;s World Championship" data-search="ゴルフの思い出 honda lpga thailand・hsbc women&#x27;s world championship タイ駐在時代に足を運んだ女子ゴルフトーナメントでの記念写真14点。honda lpga thailand（チョンブリ・シアムカントリークラブ）の練習日・ラウンド・大会レセプション、およびhsbc women&#x27;s world championship（シンガポール）でのもの。ご一緒した選手の皆さまのお名前は伏せています。 golf/golf-omoide-lpga-thailand-singapore.pdf ゴルフ 2018-02-01 fourteen photographs from women&#x27;s golf tournaments attended during the thailand years: practice days, rounds and the tournament reception at honda lpga thailand (siam country club, chonburi), and the hsbc women&#x27;s world championship in singapore. the names of the players pictured are withheld. golf memories siam country club chonburi singapore photographs thailand years"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">002</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/golf-golf-omoide-lpga-thailand-singapore-pdf-9f1cccbe.jpg" alt="ゴルフの思い出 Honda LPGA Thailand" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/golf-golf-omoide-lpga-thailand-singapore-pdf-9f1cccbe.jpg" alt="ゴルフの思い出 Honda LPGA Thailand・HSBC Women&#x27;s World Championship" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>ゴルフの思い出 Honda LPGA Thailand・HSBC Women&#x27;s World Championship</h2>
     <p class="note">タイ駐在時代に足を運んだ女子ゴルフトーナメントでの記念写真14点。Honda LPGA Thailand（チョンブリ・シアムカントリークラブ）の練習日・ラウンド・大会レセプション、およびHSBC Women&#x27;s World Championship（シンガポール）でのもの。ご一緒した選手の皆さまのお名前は伏せています。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Fourteen photographs from women's golf tournaments attended during the Thailand years: practice days, rounds and the tournament reception at Honda LPGA Thailand (Siam Country Club, Chonburi), and the HSBC Women's World Championship in Singapore. The names of the players pictured are withheld.</p>
     <p class="meta"><span>2018-02-01</span><span>14ページ</span><span>4.8 MB</span><span>ゴルフ</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E8%AC%9B%E6%BC%94%E3%83%BB%E7%99%BB%E5%A3%87/waseda-gakuin-panel-2017-global-society.pdf" data-kind="pdf"
-   data-no="003" data-title="早稲田大学高等学院 パネルディスカッション「グローバル社会と、学院と、これから2017」"
+   data-no="003" data-title="早稲田大学高等学院 パネルディスカッション「グローバル社会と、学院と、これから2017」" data-search="早稲田大学高等学院 パネルディスカッション「グローバル社会と、学院と、これから2017」 2017年11月11日、早稲田大学高等学院 講堂で開催されたパネルディスカッションの告知資料。英語科教諭 野中久武氏が教え子5名と語る100分。パネリストは亀山渉（早稲田大学教授）、小松庸人（外務省）、菅野幹雄（日本経済新聞社）、松本晋一（味の素）、三木晋吉（東京海上日動火災保険タイランド社長・1983年学院卒）。 講演・登壇/waseda-gakuin-panel-2017-global-society.pdf 講演・登壇 2017-11-11 announcement for a panel discussion held on 11 november 2017 at waseda university senior high school, where an english teacher spoke with five former students. shinkichi miki, then president of tokio marine insurance (thailand) and a 1983 graduate of the school, appeared alongside panelists from waseda university, the ministry of foreign affairs, nikkei and ajinomoto. panel discussion waseda university senior high school global society 2017 shinkichi miki president tokio marine insurance thailand class of 1983 lecture"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">003</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/waseda-gakuin-panel-2017-global-society-pdf-aeb25493.jpg" alt="早稲田大学高等学院 パネルディスカッション" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/waseda-gakuin-panel-2017-global-society-pdf-aeb25493.jpg" alt="早稲田大学高等学院 パネルディスカッション「グローバル社会と、学院と、これから2017」" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>早稲田大学高等学院 パネルディスカッション「グローバル社会と、学院と、これから2017」</h2>
     <p class="note">2017年11月11日、早稲田大学高等学院 講堂で開催されたパネルディスカッションの告知資料。英語科教諭 野中久武氏が教え子5名と語る100分。パネリストは亀山渉（早稲田大学教授）、小松庸人（外務省）、菅野幹雄（日本経済新聞社）、松本晋一（味の素）、三木晋吉（東京海上日動火災保険タイランド社長・1983年学院卒）。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Announcement for a panel discussion held on 11 November 2017 at Waseda University Senior High School, where an English teacher spoke with five former students. Shinkichi Miki, then President of Tokio Marine Insurance (Thailand) and a 1983 graduate of the school, appeared alongside panelists from Waseda University, the Ministry of Foreign Affairs, Nikkei and Ajinomoto.</p>
     <p class="meta"><span>2017-11-11</span><span>1ページ</span><span>356.6 KB</span><span>講演・登壇</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/a-day-bulletin-504-2017-tokio-marine-thailand-mike-miki.pdf" data-kind="pdf"
-   data-no="004" data-title="a day BULLETIN 第504号 特集インタビュー「挑戦 / The Challenge」"
+   data-no="004" data-title="a day BULLETIN 第504号 特集インタビュー「挑戦 / The Challenge」" data-search="a day bulletin 第504号 特集インタビュー「挑戦 / the challenge」 タイの週刊フリーマガジン a day bulletin 第504号（2017年9月18日発行）の特集インタビュー全4ページ。東京海上日動火災保険（タイランド）社長 三木晋吉（shinkichi mike miki）。米国・日本・フィリピン・タイでの勤務経験を踏まえた企業文化の違い、「to be a good company」の three pillars、マリン保険とメコン諸国への事業展開、宮本武蔵に学ぶ意思決定について。表紙・pp.10-15。 掲載記事/a-day-bulletin-504-2017-tokio-marine-thailand-mike-miki.pdf 掲載記事 2017-09-18 cover feature interview in a day bulletin no. 504, a bangkok weekly free magazine, dated 18 september 2017. shinkichi mike miki, president of tokio marine insurance (thailand), on differences in corporate culture across the united states, japan, the philippines and thailand, the three pillars of &quot;to be a good company,&quot; marine insurance and expansion into the mekong countries, and decision-making learned from miyamoto musashi. cover and pp. 10-15. bangkok weekly free magazine cover feature interview the challenge shinkichi mike miki president tokio marine insurance thailand marine insurance mekong miyamoto musashi"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">004</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/a-day-bulletin-504-2017-tokio-marine-thailand-mi-9bb540e4.jpg" alt="a day BULLETIN 第504号 特集インタビュー" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/a-day-bulletin-504-2017-tokio-marine-thailand-mi-9bb540e4.jpg" alt="a day BULLETIN 第504号 特集インタビュー「挑戦 / The Challenge」" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>a day BULLETIN 第504号 特集インタビュー「挑戦 / The Challenge」</h2>
     <p class="note">タイの週刊フリーマガジン a day BULLETIN 第504号（2017年9月18日発行）の特集インタビュー全4ページ。東京海上日動火災保険（タイランド）社長 三木晋吉（Shinkichi Mike Miki）。米国・日本・フィリピン・タイでの勤務経験を踏まえた企業文化の違い、「To Be a Good Company」の three pillars、マリン保険とメコン諸国への事業展開、宮本武蔵に学ぶ意思決定について。表紙・pp.10-15。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Cover feature interview in a day BULLETIN No. 504, a Bangkok weekly free magazine, dated 18 September 2017. Shinkichi Mike Miki, President of Tokio Marine Insurance (Thailand), on differences in corporate culture across the United States, Japan, the Philippines and Thailand, the three pillars of "To Be a Good Company," marine insurance and expansion into the Mekong countries, and decision-making learned from Miyamoto Musashi. Cover and pp. 10-15.</p>
     <p class="meta"><span>2017-09-18</span><span>4ページ</span><span>358.2 KB</span><span>掲載記事</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/a-day-bulletin-504-2017-photo-session-behind-the-scenes.pdf" data-kind="pdf"
-   data-no="005" data-title="a day BULLETIN 第504号 撮影記録"
+   data-no="005" data-title="a day BULLETIN 第504号 撮影記録" data-search="a day bulletin 第504号 撮影記録 2017年8月11日にバンコクで行われた a day bulletin 第504号 表紙・特集インタビューの撮影セッションの記録8点。スタジオでのポートレート撮影、東京海上グループのワールドワイド・ネットワーク図を背にしたカット、執務室での撮影風景、誌面に使われたオフィスでのポートレート。あわせて同年9月18日の発行後、bts車内やバンコク市内で誌面が読まれている様子を収録。ご一緒した方々のお名前は伏せています。 掲載記事/a-day-bulletin-504-2017-photo-session-behind-the-scenes.pdf 掲載記事 2017-08-11 eight images from the photo session for the cover and feature interview of a day bulletin no. 504, shot in bangkok on 11 august 2017: studio portraits, a frame against the tokio marine group worldwide network map, the shoot in his office, and the office portrait used in the magazine. also included are scenes of the issue being read on the bts and around bangkok after publication on 18 september. the names of those pictured are withheld. photo session behind the scenes bangkok cover shoot studio portrait tokio marine worldwide network bts skytrain 2017"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">005</span><span class="kind">PDF</span></div>
   <div class="shot"><img src="thumbs/a-day-bulletin-504-2017-photo-session-behind-the-a87901f6.jpg" alt="a day BULLETIN 第504号 撮影記録" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>a day BULLETIN 第504号 撮影記録</h2>
     <p class="note">2017年8月11日にバンコクで行われた a day BULLETIN 第504号 表紙・特集インタビューの撮影セッションの記録8点。スタジオでのポートレート撮影、東京海上グループのワールドワイド・ネットワーク図を背にしたカット、執務室での撮影風景、誌面に使われたオフィスでのポートレート。あわせて同年9月18日の発行後、BTS車内やバンコク市内で誌面が読まれている様子を収録。ご一緒した方々のお名前は伏せています。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Eight images from the photo session for the cover and feature interview of a day BULLETIN No. 504, shot in Bangkok on 11 August 2017: studio portraits, a frame against the Tokio Marine Group worldwide network map, the shoot in his office, and the office portrait used in the magazine. Also included are scenes of the issue being read on the BTS and around Bangkok after publication on 18 September. The names of those pictured are withheld.</p>
     <p class="meta"><span>2017-08-11</span><span>8ページ</span><span>2.1 MB</span><span>掲載記事</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/nna-thailand-2017-02-tokio-marine-agency-sales.pdf" data-kind="pdf"
-   data-no="006" data-title="The Daily NNA タイ版 2017年2月17日「東京海上、代理店販売を強化」"
+   data-no="006" data-title="The Daily NNA タイ版 2017年2月17日「東京海上、代理店販売を強化」" data-search="the daily nna タイ版 2017年2月17日「東京海上、代理店販売を強化」 アジア経済情報紙nnaタイ版の一面記事。タイ国東京海上火災保険 三木晋吉社長へのインタビュー。タイ進出55周年を経て2017年度を飛躍の年と位置づけ、代理店・ブローカー経由の販売チャンネル拡大により売上高80億バーツ（約260億円）を目指す方針を語る。自動車ディーラー経由50%・日系向け45%という売上構成、タイ特有の自動車保険市場についても言及。 掲載記事/nna-thailand-2017-02-tokio-marine-agency-sales.pdf 掲載記事 2017-02-17 front-page article in the daily nna (thailand edition), 17 february 2017. an interview with shinkichi miki, president of tokio marine insurance (thailand), on positioning 2017 as a year of growth after 55 years in the thai market, expanding distribution through agents and brokers toward a revenue target of thb 8 billion, and the particular character of thailand&#x27;s motor insurance market. front page interview agency broker distribution thailand motor insurance market baht revenue target"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">006</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/nna-thailand-2017-02-tokio-marine-agency-sales-p-b45f0388.jpg" alt="The Daily NNA タイ版 2017年2月17日" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/nna-thailand-2017-02-tokio-marine-agency-sales-p-b45f0388.jpg" alt="The Daily NNA タイ版 2017年2月17日「東京海上、代理店販売を強化」" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>The Daily NNA タイ版 2017年2月17日「東京海上、代理店販売を強化」</h2>
     <p class="note">アジア経済情報紙NNAタイ版の一面記事。タイ国東京海上火災保険 三木晋吉社長へのインタビュー。タイ進出55周年を経て2017年度を飛躍の年と位置づけ、代理店・ブローカー経由の販売チャンネル拡大により売上高80億バーツ（約260億円）を目指す方針を語る。自動車ディーラー経由50%・日系向け45%という売上構成、タイ特有の自動車保険市場についても言及。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Front-page article in The Daily NNA (Thailand edition), 17 February 2017. An interview with Shinkichi Miki, President of Tokio Marine Insurance (Thailand), on positioning 2017 as a year of growth after 55 years in the Thai market, expanding distribution through agents and brokers toward a revenue target of THB 8 billion, and the particular character of Thailand's motor insurance market.</p>
     <p class="meta"><span>2017-02-17</span><span>1ページ</span><span>187.8 KB</span><span>掲載記事</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E5%AF%84%E7%A8%BF/my-rookie-days-shinnyu-shain-jidai.pdf" data-kind="pdf"
-   data-no="007" data-title="寄稿「My Rookie Days（10）私の新入社員時代」"
+   data-no="007" data-title="寄稿「My Rookie Days（10）私の新入社員時代」" data-search="寄稿「my rookie days（10）私の新入社員時代」 タイ国東京海上火災保険 三木晋吉による寄稿。1987年入社当時のバブル期の東京、本店営業3部でマスコミ系顧客を担当した日々、日本リーグ・バスケットボール部との両立、興行中止保険や打ち上げ保険といった特殊な保険の設計、アントニオ猪木氏との出会い、そしてスティーブ・ジョブズの「connecting dots」に重ねた「ご縁」についてのエッセイ。 寄稿/my-rookie-days-shinnyu-shain-jidai.pdf 寄稿 2016-12-08 essay by shinkichi miki, then president of tokio marine insurance (thailand), on his first years at the company. tokyo in the bubble era after joining in 1987, serving media clients at the head office, balancing work with the company&#x27;s basketball team in japan&#x27;s national league, designing unusual covers such as event cancellation insurance, and a reflection on chance connections framed by steve jobs&#x27;s &quot;connecting dots.&quot; essay my rookie days tokyo bubble era media clients event cancellation insurance japan national basketball league connecting dots"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">007</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/my-rookie-days-shinnyu-shain-jidai-pdf-0a315ada.jpg" alt="寄稿 My Rookie Days 私の新入社員時代" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/my-rookie-days-shinnyu-shain-jidai-pdf-0a315ada.jpg" alt="寄稿「My Rookie Days（10）私の新入社員時代」" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>寄稿「My Rookie Days（10）私の新入社員時代」</h2>
     <p class="note">タイ国東京海上火災保険 三木晋吉による寄稿。1987年入社当時のバブル期の東京、本店営業3部でマスコミ系顧客を担当した日々、日本リーグ・バスケットボール部との両立、興行中止保険や打ち上げ保険といった特殊な保険の設計、アントニオ猪木氏との出会い、そしてスティーブ・ジョブズの「Connecting Dots」に重ねた「ご縁」についてのエッセイ。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Essay by Shinkichi Miki, then President of Tokio Marine Insurance (Thailand), on his first years at the company. Tokyo in the bubble era after joining in 1987, serving media clients at the head office, balancing work with the company's basketball team in Japan's national league, designing unusual covers such as event cancellation insurance, and a reflection on chance connections framed by Steve Jobs's "connecting dots."</p>
     <p class="meta"><span>2016-12-08</span><span>3ページ</span><span>1.4 MB</span><span>寄稿</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/the-best-biz-thailand-2015-tokio-marine-press-conference.pdf" data-kind="pdf"
-   data-no="008" data-title="The Best Biz Thailand 2015 表紙特集「東京海上グループ タイ事業戦略記者会見」"
+   data-no="008" data-title="The Best Biz Thailand 2015 表紙特集「東京海上グループ タイ事業戦略記者会見」" data-search="the best biz thailand 2015 表紙特集「東京海上グループ タイ事業戦略記者会見」 2015年7月31日バンコクで開催された東京海上グループの記者会見（life &amp; health / property &amp; casualty）を伝える表紙特集 pp.8-11。東京海上ホールディングス 永野毅 社長兼ceoが、タイをメコン諸国の中心と位置づけるグループ戦略、2558年から2560年の中期ビジョン「2017 to be a good company」の三本柱（look beyond profit・empower our people・deliver on commitment）、hcc insurance holdings買収、高齢化社会を迎えるタイでの生命保険・損害保険事業について語る。記者会見にはタイ国東京海上火災保険 三木晋吉社長も同席。 掲載記事/the-best-biz-thailand-2015-tokio-marine-press-conference.pdf 掲載記事 2015-07-31 cover feature, pp. 8-11, on the tokio marine group press conference held in bangkok on 31 july 2015 covering life &amp;amp; health and property &amp;amp; casualty. tsuyoshi nagano, president and ceo of tokio marine holdings, on the group&#x27;s strategy with thailand at the centre of the mekong countries, the mid-term vision &quot;2017 to be a good company&quot; and its three pillars (look beyond profit, empower our people, deliver on commitment), the acquisition of hcc insurance holdings, and life and non-life business in an ageing thailand. shinkichi miki, president of tokio marine insurance (thailand), also attended. the best biz thailand press conference tsuyoshi nagano tokio marine holdings president ceo hcc insurance holdings good company mekong bangkok 2015"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">008</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/the-best-biz-thailand-2015-tokio-marine-press-co-ecb4edb1.jpg" alt="The Best Biz Thailand 2015 表紙特集" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/the-best-biz-thailand-2015-tokio-marine-press-co-ecb4edb1.jpg" alt="The Best Biz Thailand 2015 表紙特集「東京海上グループ タイ事業戦略記者会見」" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>The Best Biz Thailand 2015 表紙特集「東京海上グループ タイ事業戦略記者会見」</h2>
     <p class="note">2015年7月31日バンコクで開催された東京海上グループの記者会見（Life &amp; Health / Property &amp; Casualty）を伝える表紙特集 pp.8-11。東京海上ホールディングス 永野毅 社長兼CEOが、タイをメコン諸国の中心と位置づけるグループ戦略、2558年から2560年の中期ビジョン「2017 To be a Good Company」の三本柱（Look beyond Profit・Empower our People・Deliver on Commitment）、HCC Insurance Holdings買収、高齢化社会を迎えるタイでの生命保険・損害保険事業について語る。記者会見にはタイ国東京海上火災保険 三木晋吉社長も同席。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Cover feature, pp. 8-11, on the Tokio Marine Group press conference held in Bangkok on 31 July 2015 covering Life &amp; Health and Property &amp; Casualty. Tsuyoshi Nagano, President and CEO of Tokio Marine Holdings, on the group's strategy with Thailand at the centre of the Mekong countries, the mid-term vision "2017 To be a Good Company" and its three pillars (Look beyond Profit, Empower our People, Deliver on Commitment), the acquisition of HCC Insurance Holdings, and life and non-life business in an ageing Thailand. Shinkichi Miki, President of Tokio Marine Insurance (Thailand), also attended.</p>
     <p class="meta"><span>2015-07-31</span><span>2ページ</span><span>1.7 MB</span><span>掲載記事</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E5%AF%84%E7%A8%BF/my-fair-golf-jcc-nawatani-15th.pdf" data-kind="pdf"
-   data-no="009" data-title="寄稿「My Fair Golf」Serial 71 忘れられないあのホール"
+   data-no="009" data-title="寄稿「My Fair Golf」Serial 71 忘れられないあのホール" data-search="寄稿「my fair golf」serial 71 忘れられないあのホール バンコク日本人商工会議所（jcc）理事としての寄稿。1996年フィリピン駐在時に始めたゴルフ歴、シンシナティ・ロサンゼルス駐在時代のラウンド、プロゴルファー宮里藍さんから受けた「自然を楽しむ」という助言、そして忘れられないホールとしてナワタニ・ゴルフ・コース15番を挙げる。 寄稿/my-fair-golf-jcc-nawatani-15th.pdf 寄稿 2015-06-01 essay written as a director of the japanese chamber of commerce, bangkok. taking up golf while posted to the philippines in 1996, rounds played during the cincinnati and los angeles years, advice from a professional golfer on enjoying the natural setting, and the 15th at nawatani golf course as the hole he cannot forget. essay my fair golf japanese chamber of commerce bangkok philippines cincinnati los angeles nawatani golf course"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">009</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/my-fair-golf-jcc-nawatani-15th-pdf-717034b5.jpg" alt="寄稿 My Fair Golf 忘れられないあのホール" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/my-fair-golf-jcc-nawatani-15th-pdf-717034b5.jpg" alt="寄稿「My Fair Golf」Serial 71 忘れられないあのホール" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>寄稿「My Fair Golf」Serial 71 忘れられないあのホール</h2>
     <p class="note">バンコク日本人商工会議所（JCC）理事としての寄稿。1996年フィリピン駐在時に始めたゴルフ歴、シンシナティ・ロサンゼルス駐在時代のラウンド、プロゴルファー宮里藍さんから受けた「自然を楽しむ」という助言、そして忘れられないホールとしてナワタニ・ゴルフ・コース15番を挙げる。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Essay written as a director of the Japanese Chamber of Commerce, Bangkok. Taking up golf while posted to the Philippines in 1996, rounds played during the Cincinnati and Los Angeles years, advice from a professional golfer on enjoying the natural setting, and the 15th at Nawatani Golf Course as the hole he cannot forget.</p>
     <p class="meta"><span>2015-06-01</span><span>3ページ</span><span>1.5 MB</span><span>寄稿</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/ceo-thailand-issue115-2015-tokio-marine-thailand.pdf" data-kind="pdf"
-   data-no="010" data-title="CEO Thailand 誌 Issue 115 表紙特集 タイ国東京海上火災保険 三木晋吉社長"
+   data-no="010" data-title="CEO Thailand 誌 Issue 115 表紙特集 タイ国東京海上火災保険 三木晋吉社長" data-search="ceo thailand 誌 issue 115 表紙特集 タイ国東京海上火災保険 三木晋吉社長 タイのビジネス誌 ceo thailand の表紙特集 pp.31-32。「損害保険業界トップ3を目指して」。2557年（2014年）の直接収入保険料7412百万バーツ・純利益416百万バーツ、2558年（2015年）は直接収入保険料8.2十億バーツ・10.8%成長を目標に掲げる。運転行動に応じた自動車保険料の見直し、インフラ関連事業への進出、s&amp;pからのa-格付、修理ネットワークの内製化などを語る。あわせて「good company」としての社会貢献活動（奨学金、環境保全プロジェクト「รักโตเกียวมารีน รักษ์น้ำ รักษ์ป่า」、ネパール地震被災者支援）を紹介。 掲載記事/ceo-thailand-issue115-2015-tokio-marine-thailand.pdf 掲載記事 2015-01-01 cover feature, pp. 31-32, in the thai business magazine ceo thailand. shinkichi miki, president of tokio marine insurance (thailand), on the aim of becoming one of the top three non-life insurers in the country: direct written premium of thb 7,412 million and net profit of thb 416 million for 2014, with a target of thb 8.2 billion and growth above 10.8% for 2015. he discusses pricing motor cover by driving behaviour, entry into infrastructure business, the company&#x27;s a- rating from s&amp;amp;p, and bringing repair networks in house, alongside community work as a &quot;good company&quot; including scholarships, a water and forest conservation project, and relief for the nepal earthquake. ceo thailand magazine issue 115 cover story top three non-life insurer direct written premium baht standard and poors a- rating infrastructure motor insurance nepal earthquake relief"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">010</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/ceo-thailand-issue115-2015-tokio-marine-thailand-ff0aafc8.jpg" alt="CEO Thailand 誌 Issue 115 表紙特集" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/ceo-thailand-issue115-2015-tokio-marine-thailand-ff0aafc8.jpg" alt="CEO Thailand 誌 Issue 115 表紙特集 タイ国東京海上火災保険 三木晋吉社長" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>CEO Thailand 誌 Issue 115 表紙特集 タイ国東京海上火災保険 三木晋吉社長</h2>
     <p class="note">タイのビジネス誌 CEO Thailand の表紙特集 pp.31-32。「損害保険業界トップ3を目指して」。2557年（2014年）の直接収入保険料7412百万バーツ・純利益416百万バーツ、2558年（2015年）は直接収入保険料8.2十億バーツ・10.8%成長を目標に掲げる。運転行動に応じた自動車保険料の見直し、インフラ関連事業への進出、S&amp;PからのA-格付、修理ネットワークの内製化などを語る。あわせて「Good Company」としての社会貢献活動（奨学金、環境保全プロジェクト「รักโตเกียวมารีน รักษ์น้ำ รักษ์ป่า」、ネパール地震被災者支援）を紹介。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Cover feature, pp. 31-32, in the Thai business magazine CEO Thailand. Shinkichi Miki, President of Tokio Marine Insurance (Thailand), on the aim of becoming one of the top three non-life insurers in the country: direct written premium of THB 7,412 million and net profit of THB 416 million for 2014, with a target of THB 8.2 billion and growth above 10.8% for 2015. He discusses pricing motor cover by driving behaviour, entry into infrastructure business, the company's A- rating from S&amp;P, and bringing repair networks in house, alongside community work as a "Good Company" including scholarships, a water and forest conservation project, and relief for the Nepal earthquake.</p>
     <p class="meta"><span>2015-01-01</span><span>3ページ</span><span>904.5 KB</span><span>掲載記事</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/wise-thai-shinchoryu-vol43-tokio-marine-thailand.pdf" data-kind="pdf"
-   data-no="011" data-title="WiSE「タイの新潮流」VOL.43 東京海上日動火災保険（タイランド）社長 三木晋吉"
+   data-no="011" data-title="WiSE「タイの新潮流」VOL.43 東京海上日動火災保険（タイランド）社長 三木晋吉" data-search="wise「タイの新潮流」vol.43 東京海上日動火災保険（タイランド）社長 三木晋吉 日系企業トップインタビュー連載。「タイ進出50年で最大の変革期。目指すは、業界3位」。タイ国内24支店・日本人駐在員21名を含む約800名体制、インドネシア・インド・タイを東南アジア3大重要拠点とする位置づけ、メコン室の設置とメコン河下流域（タイ・ミャンマー・ラオス・カンボジア）への展開、業界7位から3位への浮上を5年で達成する目標について語る。 掲載記事/wise-thai-shinchoryu-vol43-tokio-marine-thailand.pdf 掲載記事 2015-01-01 interview in wise magazine&#x27;s series on the heads of japanese companies in thailand. shinkichi miki on the largest period of change in fifty years in the thai market: a workforce of roughly 800 across 24 branches, indonesia, india and thailand as the three key bases in southeast asia, a dedicated mekong unit covering thailand, myanmar, laos and cambodia, and the goal of moving from seventh to third in the market within five years. wise new currents in thailand top interview mekong myanmar laos cambodia branches market ranking"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">011</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/wise-thai-shinchoryu-vol43-tokio-marine-thailand-e880d382.jpg" alt="WiSE タイの新潮流 VOL.43" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/wise-thai-shinchoryu-vol43-tokio-marine-thailand-e880d382.jpg" alt="WiSE「タイの新潮流」VOL.43 東京海上日動火災保険（タイランド）社長 三木晋吉" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>WiSE「タイの新潮流」VOL.43 東京海上日動火災保険（タイランド）社長 三木晋吉</h2>
     <p class="note">日系企業トップインタビュー連載。「タイ進出50年で最大の変革期。目指すは、業界3位」。タイ国内24支店・日本人駐在員21名を含む約800名体制、インドネシア・インド・タイを東南アジア3大重要拠点とする位置づけ、メコン室の設置とメコン河下流域（タイ・ミャンマー・ラオス・カンボジア）への展開、業界7位から3位への浮上を5年で達成する目標について語る。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Interview in WiSE magazine's series on the heads of Japanese companies in Thailand. Shinkichi Miki on the largest period of change in fifty years in the Thai market: a workforce of roughly 800 across 24 branches, Indonesia, India and Thailand as the three key bases in Southeast Asia, a dedicated Mekong unit covering Thailand, Myanmar, Laos and Cambodia, and the goal of moving from seventh to third in the market within five years.</p>
     <p class="meta"><span>2015-01-01</span><span>1ページ</span><span>564.7 KB</span><span>掲載記事</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/watashi-no-la-tokio-marine-los-angeles-branch.pdf" data-kind="pdf"
-   data-no="012" data-title="インタビュー「私のLA」生まれ故郷のLAで地域・社会に貢献します"
+   data-no="012" data-title="インタビュー「私のLA」生まれ故郷のLAで地域・社会に貢献します" data-search="インタビュー「私のla」生まれ故郷のlaで地域・社会に貢献します 東京海上日動火災保険 米国支店部長兼ロサンゼルス支店長 三木晋吉へのインタビュー。1965年ロサンゼルス生まれ、87年早稲田大学卒業・東京海上火災保険入社、2003年より米国シンシナティ支店長、08年よりロサンゼルス支店長。中学3年で193cm、バスケットボールとの出会いから日本リーグでの9年間、37歳での引退、生まれ故郷laへの赴任、jbaを通じた地域貢献活動について語る。 掲載記事/watashi-no-la-tokio-marine-los-angeles-branch.pdf 掲載記事 2013-01-01 interview with shinkichi miki, head of u.s. branches and los angeles branch manager for tokio marine &amp;amp; nichido. born in los angeles in 1965, he graduated from waseda university and joined the company in 1987, became cincinnati branch manager in 2003 and los angeles branch manager in 2008. he describes reaching 193cm in his third year of junior high, nine years in japan&#x27;s national basketball league, retiring from the game at 37, returning to the city of his birth, and community work through the japan business association. my la interview head of us branches los angeles branch manager born 1965 waseda university 1987 cincinnati japan business association basketball national league"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">012</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/watashi-no-la-tokio-marine-los-angeles-branch-pd-90a9ff11.jpg" alt="インタビュー 私のLA" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/watashi-no-la-tokio-marine-los-angeles-branch-pd-90a9ff11.jpg" alt="インタビュー「私のLA」生まれ故郷のLAで地域・社会に貢献します" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>インタビュー「私のLA」生まれ故郷のLAで地域・社会に貢献します</h2>
     <p class="note">東京海上日動火災保険 米国支店部長兼ロサンゼルス支店長 三木晋吉へのインタビュー。1965年ロサンゼルス生まれ、87年早稲田大学卒業・東京海上火災保険入社、2003年より米国シンシナティ支店長、08年よりロサンゼルス支店長。中学3年で193cm、バスケットボールとの出会いから日本リーグでの9年間、37歳での引退、生まれ故郷LAへの赴任、JBAを通じた地域貢献活動について語る。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Interview with Shinkichi Miki, Head of U.S. Branches and Los Angeles Branch Manager for Tokio Marine &amp; Nichido. Born in Los Angeles in 1965, he graduated from Waseda University and joined the company in 1987, became Cincinnati Branch Manager in 2003 and Los Angeles Branch Manager in 2008. He describes reaching 193cm in his third year of junior high, nine years in Japan's national basketball league, retiring from the game at 37, returning to the city of his birth, and community work through the Japan Business Association.</p>
     <p class="meta"><span>2013-01-01</span><span>1ページ</span><span>868.3 KB</span><span>掲載記事</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E8%A8%98%E5%BF%B5%E5%86%99%E7%9C%9F/kinen-shashin-1990s-2010s.pdf" data-kind="pdf"
-   data-no="013" data-title="記念写真 1990年代-2010年代"
+   data-no="013" data-title="記念写真 1990年代-2010年代" data-search="記念写真 1990年代-2010年代 パーティーや会合の折に撮影した記念写真8点。1990年代の東京でのパーティー、および2010年代のロサンゼルス・ビバリーヒルズ駐在時代のもの。ご一緒した方々のお名前は伏せています。 記念写真/kinen-shashin-1990s-2010s.pdf 記念写真 2013-01-01 eight photographs taken at parties and gatherings: tokyo in the 1990s, and the los angeles and beverly hills years in the 2010s. the names of those pictured are withheld. commemorative photographs tokyo los angeles beverly hills 1990s 2010s"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">013</span><span class="kind">PDF</span></div>
   <div class="shot"><img src="thumbs/kinen-shashin-1990s-2010s-pdf-35ed08bb.jpg" alt="記念写真 1990年代-2010年代" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>記念写真 1990年代-2010年代</h2>
     <p class="note">パーティーや会合の折に撮影した記念写真8点。1990年代の東京でのパーティー、および2010年代のロサンゼルス・ビバリーヒルズ駐在時代のもの。ご一緒した方々のお名前は伏せています。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Eight photographs taken at parties and gatherings: Tokyo in the 1990s, and the Los Angeles and Beverly Hills years in the 2010s. The names of those pictured are withheld.</p>
     <p class="meta"><span>2013-01-01</span><span>8ページ</span><span>2.1 MB</span><span>記念写真</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/jba-news-2011-10-nisei-week-arigato.pdf" data-kind="pdf"
-   data-no="014" data-title="JBA NEWS 2011年10月号「二世ウィーク・ジャパニーズ・フェスティバル／ARIGATOイベント」"
+   data-no="014" data-title="JBA NEWS 2011年10月号「二世ウィーク・ジャパニーズ・フェスティバル／ARIGATOイベント」" data-search="jba news 2011年10月号「二世ウィーク・ジャパニーズ・フェスティバル／arigatoイベント」 南加日系商工会議所（jba）会報。三木ダウンタウン地域部会長がjbaを代表して二世ウィーク開会式で挨拶し、実行委員長マーク・ナカガワ氏へ5000ドルを寄付。あわせて東日本大震災被災者支援への感謝イベント「arigato -southern california for supporting japan relief」（在ロサンゼルス日本国総領事館主催・日米文化会館ノグチプラザ）を報じる。 掲載記事/jba-news-2011-10-nisei-week-arigato.pdf 掲載記事 2011-10-01 newsletter of the japan business association of southern california. miki, as chair of the downtown chapter, spoke on behalf of the jba at the opening ceremony of nisei week and presented a $5,000 donation to the festival&#x27;s chairman, mark nakagawa. the issue also reports on &quot;arigato — southern california for supporting japan relief,&quot; hosted by the consulate general of japan in los angeles at noguchi plaza. japan business association newsletter nisei week japanese festival arigato consulate general of japan los angeles japanese american cultural community center noguchi plaza"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">014</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/jba-news-2011-10-nisei-week-arigato-pdf-e157ab48.jpg" alt="JBA NEWS 2011年10月号" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/jba-news-2011-10-nisei-week-arigato-pdf-e157ab48.jpg" alt="JBA NEWS 2011年10月号「二世ウィーク・ジャパニーズ・フェスティバル／ARIGATOイベント」" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>JBA NEWS 2011年10月号「二世ウィーク・ジャパニーズ・フェスティバル／ARIGATOイベント」</h2>
     <p class="note">南加日系商工会議所（JBA）会報。三木ダウンタウン地域部会長がJBAを代表して二世ウィーク開会式で挨拶し、実行委員長マーク・ナカガワ氏へ5000ドルを寄付。あわせて東日本大震災被災者支援への感謝イベント「ARIGATO -Southern California for Supporting Japan Relief」（在ロサンゼルス日本国総領事館主催・日米文化会館ノグチプラザ）を報じる。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Newsletter of the Japan Business Association of Southern California. Miki, as chair of the downtown chapter, spoke on behalf of the JBA at the opening ceremony of Nisei Week and presented a $5,000 donation to the festival's chairman, Mark Nakagawa. The issue also reports on "ARIGATO — Southern California for Supporting Japan Relief," hosted by the Consulate General of Japan in Los Angeles at Noguchi Plaza.</p>
     <p class="meta"><span>2011-10-01</span><span>1ページ</span><span>1.1 MB</span><span>掲載記事</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/rafu-shimpo-2011-07-nisei-week-candidates.pdf" data-kind="pdf"
-   data-no="015" data-title="The Rafu Shimpo 2011年7月19日「Nisei Week Candidates Revealed」"
+   data-no="015" data-title="The Rafu Shimpo 2011年7月19日「Nisei Week Candidates Revealed」" data-search="the rafu shimpo 2011年7月19日「nisei week candidates revealed」 ロサンゼルスの日系紙 羅府新報の記事。第71回二世ウィーク日本祭（2011年8月13-21日・リトルトーキョー）開会式の報道。japan business association（jba）を代表し三木晋吉が二世ウィーク財団のmark nakagawa会長に5000ドルの寄付を贈呈した写真を掲載。 掲載記事/rafu-shimpo-2011-07-nisei-week-candidates.pdf 掲載記事 2011-07-19 article in the rafu shimpo, the japanese american newspaper of los angeles, covering the opening of the 71st nisei week japanese festival in little tokyo, 13-21 august 2011. the page carries a photograph of shinkichi miki presenting a $5,000 donation on behalf of the japan business association to nisei week foundation president mark nakagawa. rafu shimpo japanese american newspaper los angeles little tokyo 71st nisei week japanese festival foundation donation"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">015</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/rafu-shimpo-2011-07-nisei-week-candidates-pdf-ae812e95.jpg" alt="The Rafu Shimpo 2011年7月19日" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/rafu-shimpo-2011-07-nisei-week-candidates-pdf-ae812e95.jpg" alt="The Rafu Shimpo 2011年7月19日「Nisei Week Candidates Revealed」" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>The Rafu Shimpo 2011年7月19日「Nisei Week Candidates Revealed」</h2>
     <p class="note">ロサンゼルスの日系紙 羅府新報の記事。第71回二世ウィーク日本祭（2011年8月13-21日・リトルトーキョー）開会式の報道。Japan Business Association（JBA）を代表し三木晋吉が二世ウィーク財団のMark Nakagawa会長に5000ドルの寄付を贈呈した写真を掲載。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Article in The Rafu Shimpo, the Japanese American newspaper of Los Angeles, covering the opening of the 71st Nisei Week Japanese Festival in Little Tokyo, 13-21 August 2011. The page carries a photograph of Shinkichi Miki presenting a $5,000 donation on behalf of the Japan Business Association to Nisei Week Foundation president Mark Nakagawa.</p>
     <p class="meta"><span>2011-07-19</span><span>3ページ</span><span>225.7 KB</span><span>掲載記事</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/group-nextage-no9-communication-tmm-los-angeles.pdf" data-kind="pdf"
-   data-no="016" data-title="Group Nextage No.9「コミュニケーション 言葉は違えど」TMM米国支店ロサンゼルス駐在員 三木晋吉"
+   data-no="016" data-title="Group Nextage No.9「コミュニケーション 言葉は違えど」TMM米国支店ロサンゼルス駐在員 三木晋吉" data-search="group nextage no.9「コミュニケーション 言葉は違えど」tmm米国支店ロサンゼルス駐在員 三木晋吉 東京海上グループ社内報 group nextage 第9号 p.6。tokio marine management, inc.（tmm）米国支店（在ロサンゼルス）駐在員として、海外駐在12年目・3回目を迎えた立場から異文化コミュニケーションを語る。心掛けている3点として「自ら明るく積極的に」「表現はシンプルかつ丁寧に」「相手の立場に立って話をしっかりと聞く」を挙げ、tmm laオフィスのスローガン「お客様と最高の関係を築く」に触れる。紹介者の池田博之氏は三木の「傾聴」の姿勢をコメント。職場の同僚との写真を掲載。 掲載記事/group-nextage-no9-communication-tmm-los-angeles.pdf 掲載記事 2009-01-01 piece in group nextage no. 9, p. 6, the internal magazine of the tokio marine group. writing as a los angeles-based employee of tokio marine management, inc. (tmm) in his twelfth year abroad across three postings, miki sets out three things he keeps in mind when working across cultures: approaching others openly and actively, keeping expression simple and courteous, and listening from the other person&#x27;s position. he connects these to the tmm los angeles office slogan of building the best possible relationship with clients. a colleague&#x27;s comment describes his habit of listening closely. group nextage internal magazine tokio marine management los angeles cross cultural communication listening expatriate 2009"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">016</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/group-nextage-no9-communication-tmm-los-angeles--65e8dc3a.jpg" alt="Group Nextage No.9 コミュニケーション" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/group-nextage-no9-communication-tmm-los-angeles--65e8dc3a.jpg" alt="Group Nextage No.9「コミュニケーション 言葉は違えど」TMM米国支店ロサンゼルス駐在員 三木晋吉" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>Group Nextage No.9「コミュニケーション 言葉は違えど」TMM米国支店ロサンゼルス駐在員 三木晋吉</h2>
     <p class="note">東京海上グループ社内報 Group Nextage 第9号 p.6。Tokio Marine Management, Inc.（TMM）米国支店（在ロサンゼルス）駐在員として、海外駐在12年目・3回目を迎えた立場から異文化コミュニケーションを語る。心掛けている3点として「自ら明るく積極的に」「表現はシンプルかつ丁寧に」「相手の立場に立って話をしっかりと聞く」を挙げ、TMM LAオフィスのスローガン「お客様と最高の関係を築く」に触れる。紹介者の池田博之氏は三木の「傾聴」の姿勢をコメント。職場の同僚との写真を掲載。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Piece in Group Nextage No. 9, p. 6, the internal magazine of the Tokio Marine Group. Writing as a Los Angeles-based employee of Tokio Marine Management, Inc. (TMM) in his twelfth year abroad across three postings, Miki sets out three things he keeps in mind when working across cultures: approaching others openly and actively, keeping expression simple and courteous, and listening from the other person's position. He connects these to the TMM Los Angeles office slogan of building the best possible relationship with clients. A colleague's comment describes his habit of listening closely.</p>
     <p class="meta"><span>2009-01-01</span><span>1ページ</span><span>695.5 KB</span><span>掲載記事</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E6%8E%B2%E8%BC%89%E8%A8%98%E4%BA%8B/mobile-2002-spring-mobile-work-style.pdf" data-kind="pdf"
-   data-no="017" data-title="Mobile! 2002年春号「モバイルが仕事を変える！」用途に応じて自在にツールを使い分け"
+   data-no="017" data-title="Mobile! 2002年春号「モバイルが仕事を変える！」用途に応じて自在にツールを使い分け" data-search="mobile! 2002年春号「モバイルが仕事を変える！」用途に応じて自在にツールを使い分け モバイル情報誌 mobile! 2002年春号 p.104 の特集記事。東京海上火災保険 三木晋吉（37歳）が、上級者のモバイル環境について語る。中学時代からコンピュータに親しみ、学生時代にノートpcとメールアドレスを同時に入手。pda・ノートpc・携帯電話を顧客訪問や移動の場面ごとに使い分ける手法、海外出張時のsimカード運用、セキュリティへの配慮などを紹介。あわせてフリーソフト closepopup、beerguard を掲載。 掲載記事/mobile-2002-spring-mobile-work-style.pdf 掲載記事 2002-04-01 feature in the japanese magazine mobile!, spring 2002 issue, p. 104. shinkichi miki, then 37 and working for tokio marine, describes an advanced mobile working setup: familiarity with computers since junior high, acquiring a laptop and an email address as a student, and switching between pda, laptop and mobile phone according to whether he is visiting clients or travelling, along with sim card use on overseas trips and his approach to security. mobile magazine 2002 pda laptop mobile phone work style sim card overseas business travel tokio marine tokyo"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">017</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/mobile-2002-spring-mobile-work-style-pdf-76b38794.jpg" alt="Mobile! 2002年春号" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/mobile-2002-spring-mobile-work-style-pdf-76b38794.jpg" alt="Mobile! 2002年春号「モバイルが仕事を変える！」用途に応じて自在にツールを使い分け" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>Mobile! 2002年春号「モバイルが仕事を変える！」用途に応じて自在にツールを使い分け</h2>
     <p class="note">モバイル情報誌 Mobile! 2002年春号 p.104 の特集記事。東京海上火災保険 三木晋吉（37歳）が、上級者のモバイル環境について語る。中学時代からコンピュータに親しみ、学生時代にノートPCとメールアドレスを同時に入手。PDA・ノートPC・携帯電話を顧客訪問や移動の場面ごとに使い分ける手法、海外出張時のSIMカード運用、セキュリティへの配慮などを紹介。あわせてフリーソフト ClosePopup、BeerGuard を掲載。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Feature in the Japanese magazine Mobile!, spring 2002 issue, p. 104. Shinkichi Miki, then 37 and working for Tokio Marine, describes an advanced mobile working setup: familiarity with computers since junior high, acquiring a laptop and an email address as a student, and switching between PDA, laptop and mobile phone according to whether he is visiting clients or travelling, along with SIM card use on overseas trips and his approach to security.</p>
     <p class="meta"><span>2002-04-01</span><span>1ページ</span><span>130.6 KB</span><span>掲載記事</span></p>
   </div>
 </a>
 <a class="frame" href="files/%E7%AB%B6%E6%8A%80%E6%AD%B4/basketball-career-waseda-tokio-marine-1986-1997.pdf" data-kind="pdf"
-   data-no="018" data-title="バスケットボール競技歴 1986-1997（早稲田大学・東京海上・マニラ）"
+   data-no="018" data-title="バスケットボール競技歴 1986-1997（早稲田大学・東京海上・マニラ）" data-search="バスケットボール競技歴 1986-1997（早稲田大学・東京海上・マニラ） バスケットボール選手時代の資料8点。第44回早慶バスケットボール定期戦（1986年6月15日 早稲田大学記念会堂）プログラム表紙。早稲田大学バスケットボール部 強化リーグb-1 選手名鑑（背番号7・センター・192cm・商学部・早大学院出身「シュート。走るセンターとして期待」）。日本リーグ2部 東京海上ファルコン 選手名鑑2年度分（背番号13・193cm・85kg・ロサンゼルス出身・杉並区立高井戸第三小→杉並区立向陽中→早稲田大学高等学院→早稲田大学、1991年は平均年齢27.6歳・平均身長187.5cmのチーム）。日本リーグ2部 ファルコン・ディビジョン戦評およびスコア一覧2点。the daily manila shimbun 1997年11月26日「ひと交差点」日本人フィエスタのバスケで活躍・スポーツ通し日比交流に努力。 競技歴/basketball-career-waseda-tokio-marine-1986-1997.pdf 競技歴 1997-11-26 eight items from his playing years. the programme cover for the 44th waseda-keio basketball fixture, 15 june 1986. a waseda university squad listing (no. 7, centre, 192cm, school of commerce). two seasons of squad listings for the tokio marine falcons in the second division of japan&#x27;s national league (no. 13, 193cm, 85kg, born in los angeles; the 1991 side averaged 27.6 years and 187.5cm). division match reports and two pages of scores. and an article in the daily manila shimbun, 26 november 1997, on his play at a japanese community fiesta in the philippines and his work on japan-philippine exchange through sport. basketball career waseda university tokio marine falcons japan league second division manila philippines daily manila shimbun center number 7 number 13 1991 squad"
    target="_blank" rel="noopener">
   <div class="sprocket"><span class="no">018</span><span class="kind">PDF</span></div>
-  <div class="shot"><img src="thumbs/basketball-career-waseda-tokio-marine-1986-1997--c400ac9d.jpg" alt="バスケットボール競技歴 1986-1997" loading="lazy" decoding="async"></div>
+  <div class="shot"><img src="thumbs/basketball-career-waseda-tokio-marine-1986-1997--c400ac9d.jpg" alt="バスケットボール競技歴 1986-1997（早稲田大学・東京海上・マニラ）" loading="lazy" decoding="async"></div>
   <div class="caption">
     <h2>バスケットボール競技歴 1986-1997（早稲田大学・東京海上・マニラ）</h2>
     <p class="note">バスケットボール選手時代の資料8点。第44回早慶バスケットボール定期戦（1986年6月15日 早稲田大学記念会堂）プログラム表紙。早稲田大学バスケットボール部 強化リーグB-1 選手名鑑（背番号7・センター・192cm・商学部・早大学院出身「シュート。走るセンターとして期待」）。日本リーグ2部 東京海上ファルコン 選手名鑑2年度分（背番号13・193cm・85kg・ロサンゼルス出身・杉並区立高井戸第三小→杉並区立向陽中→早稲田大学高等学院→早稲田大学、1991年は平均年齢27.6歳・平均身長187.5cmのチーム）。日本リーグ2部 ファルコン・ディビジョン戦評およびスコア一覧2点。The Daily MANILA SHIMBUN 1997年11月26日「ひと交差点」日本人フィエスタのバスケで活躍・スポーツ通し日比交流に努力。</p>
+    <p class="en-note" lang="en"><span class="tag">EN</span>Eight items from his playing years. The programme cover for the 44th Waseda-Keio basketball fixture, 15 June 1986. A Waseda University squad listing (No. 7, centre, 192cm, School of Commerce). Two seasons of squad listings for the Tokio Marine Falcons in the second division of Japan's national league (No. 13, 193cm, 85kg, born in Los Angeles; the 1991 side averaged 27.6 years and 187.5cm). Division match reports and two pages of scores. And an article in The Daily MANILA SHIMBUN, 26 November 1997, on his play at a Japanese community fiesta in the Philippines and his work on Japan-Philippine exchange through sport.</p>
     <p class="meta"><span>1997-11-26</span><span>8ページ</span><span>12.4 MB</span><span>競技歴</span></p>
   </div>
 </a>
 <p class="empty" id="empty" hidden>該当する資料がありません。条件を変えてみてください。</p>
 </main>
 
-<footer>三木晋吉 資料アーカイブ &nbsp;·&nbsp; 2026-08-29</footer>
+<footer>三木晋吉 資料アーカイブ &nbsp;·&nbsp; Shinkichi Mike Miki Archive &nbsp;·&nbsp; 2026-08-29</footer>
 </div>
 
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="拡大表示">
@@ -399,6 +490,8 @@ footer{border-top:2px solid var(--ink);padding:26px 0 60px;
 </div>
 
 <script>
+/* HTML は生成済み。JS は絞り込みと拡大表示だけを担当する。
+   JS が無効でも全件そのまま閲覧できます。 */
 const sheet  = document.getElementById('sheet');
 const cards  = [...sheet.querySelectorAll('.frame')];
 const empty  = document.getElementById('empty');
@@ -410,8 +503,7 @@ function apply() {
   let shown = 0;
   for (const c of cards) {
     const ok = (filter === 'all' || c.dataset.kind === filter)
-            && (!term || (c.dataset.hay ||
-                 (c.dataset.hay = c.textContent.toLowerCase())).includes(term));
+            && (!term || c.dataset.search.includes(term));
     c.hidden = !ok;
     if (ok) shown++;
   }
@@ -427,6 +519,7 @@ document.getElementById('filters').addEventListener('click', e => {
   apply();
 });
 
+/* 画像はその場で拡大、PDF は新しいタブで開く */
 const lb = document.getElementById('lightbox');
 const lbImg = document.getElementById('lb-img');
 const lbTitle = document.getElementById('lb-title');
